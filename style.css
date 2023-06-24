@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker");
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: none;
+}
+
+body,
+html {
+  color: #30336b;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+  font-family: "Overpass", sans-serif;
+}
+
+.navigation {
+  background-color: #c8d6e5;
+  padding: 6px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.navigation ul li a {
+  color: #30336b;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: #706fd3;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #706fd3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.splash {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background-image: url("https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 25%;
+  height: 60%;
+  margin: 0;
+}
+
+.page-intro {
+  margin: 40px 40px 40px 20px;
+  text-align: left;
+  font-family: "Permanent Marker", cursive;
+}
+
+.main-title {
+  margin: 80px 0px 30px 0px;
+  color: #130f40;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.main-subtitle {
+  margin: 12px 0 80px 0;
+  font-weight: normal;
+  color: #30336b;
+  font-size: 23px;
+}
+
+.btn {
+  padding: 10px 18px 10px 18px;
+  font-size: 18px;
+  background-color: #706fd3;
+  color: #c8d6e5;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #3e3cc3;
+  color: #c8d6e5;
+  box-shadow: 2px 4px 10px #706fd3;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  color: #706fd3;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 150px;
+  height: 5px;
+  background: #706fd3;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -75px;
+}
+
+.about {
+  background-color: #c8d6e5;
+}
+
+.section-intro {
+  margin: 36px 0 0 0;
+  color: #30336b;
+}
+
+.features-wrapper {
+  display: flex;
+}
+
+.feature {
+  flex: 0 0 33.33333333%;
+  max-width: 33.333333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  font-size: 50px;
+  background-color: #c8d6e5;
+  border-radius: 50px;
+  box-shadow: 2px 6px 10px #30336b;
+}
+
+.feature i:hover {
+  transform: scale(1.2) rotate(25deg);
+  transition: all 0.5s;
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 1;
+}
+
+.feature-text {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+}
+
+.statement {
+  position: relative;
+  height: 200px;
+  background-image: url("https://images.pexels.com/photos/225406/pexels-photo-225406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.statement p {
+  position: absolute;
+  color: #c8d6e5;
+  font-size: 20px;
+  padding: 0 15px;
+  top: 70%;
+  font-weight: 700;
+}
+
+.quotes-wrapper {
+  margin: 72px 0 0 0;
+}
+
+.quote blockquote {
+  padding: 6px 36px;
+  margin: 36px;
+  background-color: #c8d6e5;
+  border-radius: 30px;
+  box-shadow: 2px 6px #706fd3;
+}
+
+.quote footer {
+  text-align: right;
+}
+
+.quote {
+  width: 100%;
+  padding: 0 72px;
+}
+
+.gallery {
+  padding: 0 0 0 0;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 72px 0 0 0;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-item:before {
+  position: absolute;
+  display: none;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 85%;
+  transform: translateY(-50%);
+  color: #e6e6fa;
+}
+
+.gallery-item:hover:before,
+.gallery-item:hover figcaption {
+  display: block;
+}
+
+.contact {
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 20;
+}
+
+.social-links li {
+  display: inline-block;
+  border: 3px solid #706fd3;
+  width: 80px;
+  height: 80px;
+  line-height: 90px;
+  font-size: 50px;
+  border-radius: 20px;
+  margin-right: 50px;
+  transition: all 0.5s;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #706fd3;
+  transition: all 0.5s;
+}
+
+.social-links li a:hover {
+  color: #30336b;
+}
+
+.social-links li:hover {
+  border: 3px solid #30336b;
+}
+
+.page-footer {
+  background-color: #c8d6e5;
+  padding: 12px 0;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+.flickity-page-dots .dot {
+  width: 15px;
+  height: 15px;
+  background-color: #706fd3;
+  border-radius: 5px;
+}
+
+.flickity-button-icon {
+  fill: #706fd3;
+}
+
+.flickity-button {
+  background-color: #c8d6e5;
+}
+
+@media (max-width: 767px) {
+  .features-wrapper {
+    display: block;
+  }
+  .feature {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .gallery-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    font-size: 15px;
+  }
+  .quote blockquote {
+    margin: 36px 0;
+  }
+  .navigation {
+    position: static;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .main-title {
+    margin: 0 0 0 0;
+  }
+  .main-subtitle {
+    margin: 60px 0 40px 0;
+  }
+  .page-intro {
+    margin: 10px 10px 40px 10px;
+  }
+  .navigation ul li {
+    display: block;
+    margin-right: 0;
+  }
+  .statement p {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
