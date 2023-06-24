@@ -1,4 +1,4 @@
 # tytuł strony
 lorem
 ## podtytuł strony
-Zajrzy [tutaj](https://websamuraj.pl)
+Zajrzyj [tutaj](https://websamuraj.pl)
